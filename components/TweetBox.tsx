@@ -1,10 +1,4 @@
-import {
-  CalendarIcon,
-  EmojiHappyIcon,
-  LocationMarkerIcon,
-  PhotographIcon,
-  SearchCircleIcon,
-} from '@heroicons/react/outline'
+import { PhotographIcon } from '@heroicons/react/outline'
 import { useSession } from 'next-auth/react'
 import React, { Dispatch, SetStateAction, useRef, useState } from 'react'
 import toast from 'react-hot-toast'
@@ -91,10 +85,6 @@ function TweetBox({ setTweets }: Props) {
                   imageURLBoxIsOpen ? 'scale-150' : 'scale-100'
                 }`}
               />
-              <SearchCircleIcon className="h-5 w-5" />
-              <EmojiHappyIcon className="h-5 w-5" />
-              <CalendarIcon className="h-5 w-5" />
-              <LocationMarkerIcon className="h-5 w-5" />
             </div>
             <button
               onClick={handleSubmit}
